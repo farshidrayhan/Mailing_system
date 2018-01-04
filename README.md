@@ -17,24 +17,19 @@ Smith,jon.smith@abc.edu
 
 Doe,jane.doe@asd.ce.aus
 
-which is a required format to run the mail.py file from Final_scripts  
+which is a required format to run the mail.py file from Final_scripts     
 
 
 
 
+Now the sent mails will look like this   
 
-Now the sent mail will look like this 
 
-to: jon.smith@abc.edu  
+
 
 SUB: Subject here!!!
 
-Dear Smith,
+Dear %$ last name $%,
 This is the message 
 
-to: jane.doe@asd.ce.aus
 
-SUB: Subject here!!!
-
-Dear Doe,
-This is the message 
