@@ -29,7 +29,9 @@ Now the sent mails will look like this
 
 SUB: Subject here!!!
 
-Dear %$ last name $%,
+Dear %$ last name $%,   
+
+
 This is the message 
 
 
