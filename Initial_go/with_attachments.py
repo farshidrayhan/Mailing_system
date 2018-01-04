@@ -29,9 +29,9 @@ attachment = open("/home/farshid/Desktop/passport.png", "rb")
 part = MIMEBase('application', 'octet-stream')
 part.set_payload((attachment).read())
 encoders.encode_base64(part)
-part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+part.add_header('Content-Disposition', "attachment; filename= %s" % filename) #1st attachment 
 msg.attach(part)
-part.add_header('Content-Disposition', "attachment; filename= %s" % filename)
+part.add_header('Content-Disposition', "attachment; filename= %s" % filename) #2nd attachment 
 
 msg.attach(part)
 
