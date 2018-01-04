@@ -7,12 +7,14 @@ The folder "intial go" contains the simpler seperate scripts for sending mail vi
 
 The codes in Regex folder helps to convert a list of mails writen like,
 
-jon.smith@abc.edu
+jon.smith@abc.edu  
+
 jane.doe@asd.ce.aus
 
 to 
 
-Smith,jon.smith@abc.edu
+Smith,jon.smith@abc.edu  
+
 Doe,jane.doe@asd.ce.aus
 
 which is a required format to run the mail.py file from Final_scripts  
