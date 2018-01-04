@@ -22,7 +22,7 @@ if __name__ == "__main__":
         counter = 0
         for row in readCSV:
             message =None
-            message = "Dear Dr " + row[0] + ', \n' + get_message()  # attaching message body with header
+            message = "Dear " + row[0] + ', \n' + get_message()  # attaching message body with header
             counter += 1
 
             print("Authenticating !!!", end='')
@@ -36,12 +36,6 @@ if __name__ == "__main__":
             x.add_attachment("CV.pdf", "/home/farshid/Dropbox/Conference File/Phd Proposal/Mics/main_CV.pdf")
             print("Transcript ", end='')
             x.add_attachment("transcript.pdf", "/home/farshid/Dropbox/Conference File/Phd Proposal/Mics/transcript final.pdf")
-            print("1 ", end='')
-            x.add_attachment("proposal_1.pdf", "/home/farshid/Dropbox/Conference File/Phd Proposal/Mics/proposal_1.pdf")
-            print("2 ", end='')
-            x.add_attachment("proposal_2.pdf", "/home/farshid/Dropbox/Conference File/Phd Proposal/Mics/proposal_2.pdf")
-            print("3 ",end='')
-            x.add_attachment("proposal_3.pdf", "/home/farshid/Dropbox/Conference File/Phd Proposal/Mics/proposal_3.pdf")
             print("Sending !! ",end='')
             x.send()
             print("Sent to:",row[0])
