@@ -19,6 +19,10 @@ Doe,jane.doe@asd.ce.aus
 
 which is a required format to run the mail.py file from Final_scripts  
 
+
+
+
+
 Now the sent mail will look like this 
 
 to: jon.smith@abc.edu  
