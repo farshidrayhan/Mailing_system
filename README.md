@@ -4,3 +4,16 @@ The interesting part is that rather than sending a general msg, one can put a na
 dispite of it being a BCC mail.
 
 The folder "intial go" contains the simpler seperate scripts for sending mail via gmail using python.
+
+The codes in Regex folder helps to convert a list of mails writen like,
+
+jon.smith@abc.edu
+jane.doe@asd.ce.aus
+
+to 
+
+Smith,jon.smith@abc.edu
+Doe,jane.doe@asd.ce.aus
+
+which is a required format to run the mail.py file from Final_scripts  
+
