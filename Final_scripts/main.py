@@ -1,7 +1,7 @@
 from Final_scripts import mailing_system as email
 
 def get_message():
-    f = open('/home/farshid/Dropbox/Conference File/Phd Proposal/Mics/msg.txt', 'r')
+    f = open('/home/farshid/Desktop/msg.txt', 'r')
     message_body = f.read()
     # print(message)
     f.close()
@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
 
 
-    with open('/home/farshid/Dropbox/Conference File/Phd Proposal/Mics/emails.txt') as csvfile:
+    with open('/home/farshid/Desktop/emails.txt') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         readCSV = list(readCSV)
 
@@ -31,11 +31,11 @@ if __name__ == "__main__":
 
             print("adding attachments !!! ",end='')
             print("Certificate ",end='')
-            x.add_attachment("Certificate.pdf", "/home/farshid/Dropbox/Conference File/Phd Proposal/Mics/Certificate.pdf")
+            x.add_attachment("Certificate.pdf", "/home/farshid/Desktop/Certificate.pdf")
             print("CV ", end='')
-            x.add_attachment("CV.pdf", "/home/farshid/Dropbox/Conference File/Phd Proposal/Mics/main_CV.pdf")
+            x.add_attachment("CV.pdf", "/home/farshid/Desktop/main_CV.pdf")
             print("Transcript ", end='')
-            x.add_attachment("transcript.pdf", "/home/farshid/Dropbox/Conference File/Phd Proposal/Mics/transcript final.pdf")
+            x.add_attachment("transcript.pdf", "/home/farshid/Desktop/transcript final.pdf")
             print("Sending !! ",end='')
             x.send()
             print("Sent to:",row[0])
